@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://rdx.api-x.site"))()
+loadstring(game:HttpGet("https://rdx.api-x.site/init"))()
