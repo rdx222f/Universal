@@ -112,24 +112,25 @@ function DiscordLib:Window(text)
 	local ServersHoldPadding = Instance.new("UIPadding")
 	local TopFrameHolder = Instance.new("Frame")
 
-	MainFrame.Name = "MainFrame"
-	MainFrame.Parent = Discord
-	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
-	MainFrame.BorderSizePixel = 0
-	MainFrame.ClipsDescendants = true
-	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
-	MainFrame.Size = UDim2.new(0, 681, 0, 396)
 
-       local BackgroundImage = Instance.new("ImageLabel")
+        local MainFrame = Instance.new("Frame")
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Discord
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundTransparency = 1 -- Hacer el fondo transparente para mostrar la imagen
+MainFrame.BorderSizePixel = 0
+MainFrame.ClipsDescendants = true
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 681, 0, 396)
+
+local BackgroundImage = Instance.new("ImageLabel")
 BackgroundImage.Name = "BackgroundImage"
 BackgroundImage.Parent = MainFrame
-BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Cubre todo el MainFrame
+BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Ajusta al tamaño del MainFrame
 BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
 BackgroundImage.Image = "http://www.roblox.com/asset/?id=17247294055"
-BackgroundImage.BackgroundTransparency = 1 -- Oculta el fondo del ImageLabel
-BackgroundImage.ZIndex = 0 -- Asegura que la imagen esté detrás
-
+BackgroundImage.BackgroundTransparency = 1 -- Evitar color de fondo
+BackgroundImage.ScaleType = Enum.ScaleType.Crop -- Ajusta la imagen a la ventana
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
 	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
