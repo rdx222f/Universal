@@ -126,7 +126,7 @@ BackgroundImage.Name = "BackgroundImage"
 BackgroundImage.Parent = MainFrame
 BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Cubre todo el MainFrame
 BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
-BackgroundImage.Image = "rbxassetid://17247294055"
+BackgroundImage.Image = "http://www.roblox.com/asset/?id=17247294055"
 BackgroundImage.BackgroundTransparency = 1 -- Oculta el fondo del ImageLabel
 BackgroundImage.ZIndex = 0 -- Asegura que la imagen esté detrás
 
