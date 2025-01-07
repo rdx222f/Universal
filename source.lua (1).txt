@@ -121,6 +121,15 @@ function DiscordLib:Window(text)
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	MainFrame.Size = UDim2.new(0, 681, 0, 396)
 
+       local BackgroundImage = Instance.new("ImageLabel")
+BackgroundImage.Name = "BackgroundImage"
+BackgroundImage.Parent = MainFrame
+BackgroundImage.Size = UDim2.new(1, 0, 1, 0) -- Cubre todo el MainFrame
+BackgroundImage.Position = UDim2.new(0, 0, 0, 0)
+BackgroundImage.Image = "rbxassetid://17247294055"
+BackgroundImage.BackgroundTransparency = 1 -- Oculta el fondo del ImageLabel
+BackgroundImage.ZIndex = 0 -- Asegura que la imagen esté detrás
+
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
 	TopFrame.BackgroundColor3 = Color3.fromRGB(32, 34, 37)
